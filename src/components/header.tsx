@@ -13,17 +13,17 @@ const h1 = {
   textShadow: "0px 3px 18px #262B3B",
   color:"white",
   fontSize:"73px",
-  marginTop:"120px"
+  marginTop:"120px",
 }
 const p = {
   color:"white",
 }
-export default function Header() {
+export const Header:React.FC =() => {
   return (
         <Main>
           <Container>
           <Logo>
-            <img src={logo}></img>
+            <img src={logo} />
           </Logo>
             <Menu>
               <MenuItem>APARTMÁNY</MenuItem>
@@ -38,7 +38,7 @@ export default function Header() {
             </Menu>
             <Button>Hey</Button>
         </Container>
-          <h1 style={h1}>Wellness apartmány <br></br><span style={{color:"#F0E8D9"}}>v podhůří Jeseníků</span></h1>
+          <h1 style={h1}>Wellness apartmány <br></br><span>v podhůří Jeseníků</span></h1>
           <Section>
             <div>
             <img src={union}></img>

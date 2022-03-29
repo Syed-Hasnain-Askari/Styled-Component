@@ -1,5 +1,6 @@
 import styled from  'styled-components';
 import image from '../images/mp02.png';
+import logo from '../images/logo.svg';
 export const Main = styled.div`
     width:100%;
     height:584px;
@@ -16,8 +17,6 @@ export const Container = styled.div`
 `
 export const Logo = styled.div`
     display: flex;
-    // margin-top:50px;
-    // margin-left:50px;
     width:206px;
     height:72px;
 `
