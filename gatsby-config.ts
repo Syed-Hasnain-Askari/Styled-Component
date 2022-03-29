@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
       "name": "images",
       "path": "./src/images/"
     },
-    __key: "images"
+    // __key: "images"
   }]
 };
 
