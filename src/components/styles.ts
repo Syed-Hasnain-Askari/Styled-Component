@@ -74,14 +74,26 @@ export const Paragraph: any = styled.p`
     textAlign:"center",
     fontSize:"18px",
     lineHeight:"30px",
+    @media (max-width: 768px) {
+        font-size:18
+      }
 `
-export const Heading: any = styled.h1`
-    marginTop:"80px",
-    textAlign:"center",
-    color:"#262B3B",
-    fontSize:"60px",
-    fontStyle:"bold",
-    fontFamily: "roc-grotesk, sans-serif",
+export const Title:any = styled.p`
+font-size:2.5rem;
+opacity:1;
+font-weight:bold;
+color: ${(props:Props)=>props.color ? props.color  : "#262B3B"};
+fontFamily: "roc-grotesk, sans-serif",
+@media (max-width: 768px) {
+     font-size:2rem
+   }
+   @media (max-width: 425px) {
+     font-size:2rem
+   }
 `
+interface Props {
+    fontSize: string
+    color: string
+  }
         
 

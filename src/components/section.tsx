@@ -1,71 +1,59 @@
 import React from 'react';
 // import {H1} from '../components/headings';
 import styled from 'styled-components';
-import { Container,device,Paragraph,Heading } from './styles';
-import image from '../images/section.png'
-    const container = {
-        height:"200vh",
-        maxWidth:"100%",
-        border:"1px solid black",
-        
-    }
-    const H1:any = {
-        marginTop:"80px",
-        textAlign:"center",
-        color:"#262B3B",
-        fontSize:"60px",
-        fontStyle:"bold",
-        fontFamily: "roc-grotesk, sans-serif",
-        
-            
-    }
-    const section = {
-        margin: "50px 40px 0px 40px",
-        display:"flex",
-        fkexDirection:"column",
-        justifyContent:"space-around",
-    }
-    const subsection = {
-        
-        padding:"40px",
+import { Container,device,Paragraph,Title} from './styles';
+
+    const heading:any = {
+        lineHeight:"30px",
+        textAlign:"center",        
     }
     const para:any = {
-        marginLeft:"40px",
         textAlign:"center",
         fontSize:"18px",
         lineHeight:"30px",
         color:"#262B3B",
         fontFamily: "roc-grotesk, sans-serif",
         fontStyle: "normal",
-        paddingTop:"180px",
+        padding:"50px",
   }
-
+  
 export default function Section()
 {
     return(
         <>
-        <h1 style={H1}>Intimní atmosféra <br></br> prvorepublikové vily</h1>
-        <div style={container}>
-            <div style={section}>
-                <div style={subsection}><img src={image} width="550px" height="480px"></img></div>
-                <div>
-                    <Paragraph style={para}>
+        <div className="container">
+            <Title style={heading} className="mt-5">Intimní atmosféra</Title>
+            <Title style={heading}>prvorepublikové vily</Title>
+            <div className="row d-flex flex-row align-items-center gx-5 mt-5">
+                <div className='col-md-6 col-lg-6 col-sm-12 col-xs-12'>
+                <img src="https://res.cloudinary.com/hasnainaskari32/image/upload/v1648654351/section_hx4zc6.png" width="500px" height="480px"></img>
+                    
+                </div>
+                <div  className="col-md-6 col-lg-6 col-sm-12 col-xs-12 border">
+                   <Paragraph style={para}>
                         Vila Republika na vás dýchne lázeňskou historií. Luxusní ubytování předčí všechna vaše očekávání. Moderní interiéry jednotlivých apartmánů mají společný jednotící prvek – prvorepublikové elementy. Ať už jsou to repasované dveře, původní parkety, dřevěná obložení nebo citlivě vybrané designové doplňky – vše ladí v jeden estetický celek.
                         Důraz na kvalitní vybavení je zárukou nebeského pohodlí.
-                    </Paragraph>
+                    </Paragraph> 
                 </div>
             </div>
-            <div style={section}>
-                <div>
-                    <Paragraph style={para}>
+            <Title style={heading} className="mt-5">Intimní atmosféra</Title>
+            <Title style={heading} className="mt-3">prvorepublikové vily</Title>
+            <div className="row d-flex align-items-center flex-row flex-row-reverse gx-5 mt-5 pb-5">
+                <div className='col-md-6 col-lg-6'>
+                    
+                    <img src="https://res.cloudinary.com/hasnainaskari32/image/upload/v1648654926/_06A8153_fkfspp.png" width="500px" height="480px"></img>
+                </div>
+                <div  className="col-md-6 col-lg-6 col-sm-12 border">
+                   <Paragraph style={para}>
                         Vila Republika na vás dýchne lázeňskou historií. Luxusní ubytování předčí všechna vaše očekávání. Moderní interiéry jednotlivých apartmánů mají společný jednotící prvek – prvorepublikové elementy. Ať už jsou to repasované dveře, původní parkety, dřevěná obložení nebo citlivě vybrané designové doplňky – vše ladí v jeden estetický celek.
                         Důraz na kvalitní vybavení je zárukou nebeského pohodlí.
-                    </Paragraph>
+                    </Paragraph> 
                 </div>
-                
-                <div style={subsection}><img src={image} width="550px" height="480px"></img></div>
-               
             </div>
+            <div className='row' style={{backgroundColor:"red"}}>
+
+            </div>
+           
         </div>
         </>
         
