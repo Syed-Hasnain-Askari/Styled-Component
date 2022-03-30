@@ -1,21 +1,21 @@
 import * as React from "react"
-import {Header} from "../components/header"
+import {Header} from "../components/header";
+import Section from "../components/section";
 import GloblaStyle from '../global'
 // styles
-const pageStyles = {
-  color: "#232129",
-  margin:0,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
+// const pageStyles = {
+//   color: "#232129",
+//   margin:0,
+// }
 
 
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <Header/>
+    <main>
       <GloblaStyle/>
-      <h1>Welcome to Home Page</h1>
+      <Header/>
+      <Section/>
     </main>
   )
 }

@@ -13,6 +13,7 @@ export const Container = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    align-items: center;
     padding:30px 40px 0px 40px;
 `
 export const Logo = styled.div`
@@ -30,8 +31,8 @@ export const MenuItem = styled.div`
     padding:10px;
     transform:upper-case;
     font-size:12px;
-    font-family:Roc Grotesk;
-    color:#ffffff;
+    fontFamily: "roc-grotesk, sans-serif",
+    color:white;
 `
 export const Button = styled.div`
     width:176px;
@@ -39,7 +40,7 @@ export const Button = styled.div`
     background-color:#BF5757;
     color:white;
     padding-top:20px;
-    font-family:Roc Grotesk;
+    fontFamily: "roc-grotesk, sans-serif",
     text-align:center;
     font-size:12px;
 `
@@ -49,3 +50,38 @@ export const Section = styled.div`
     flex-direction:row;
     justify-content:space-around;
 `
+const size = {
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px'
+}
+export const device = {
+    mobileS: `(min-width: ${size.mobileS})`,
+    mobileM: `(min-width: ${size.mobileM})`,
+    mobileL: `(min-width: ${size.mobileL})`,
+    tablet: `(min-width: ${size.tablet})`,
+    laptop: `(min-width: ${size.laptop})`,
+    laptopL: `(min-width: ${size.laptopL})`,
+    desktop: `(min-width: ${size.desktop})`,
+    desktopL: `(min-width: ${size.desktop})`
+};
+export const Paragraph: any = styled.p`
+    marginLeft:"40px",
+    textAlign:"center",
+    fontSize:"18px",
+    lineHeight:"30px",
+`
+export const Heading: any = styled.h1`
+    marginTop:"80px",
+    textAlign:"center",
+    color:"#262B3B",
+    fontSize:"60px",
+    fontStyle:"bold",
+    fontFamily: "roc-grotesk, sans-serif",
+`
+        
+

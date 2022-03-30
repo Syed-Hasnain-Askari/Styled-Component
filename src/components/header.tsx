@@ -1,13 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Main,Button, Container,Logo,Menu,MenuItem,Section} from './styles';
 import logo from '../images/logo.svg';
 import union from '../images/Union.png';
 import union2 from '../images/union2.png';
 import union3 from '../images/union3.png';
 import Union4 from '../images/Union4.png'
-const h1 = {
+const h1:any = {
   marginLeft:"50px",
-  fontFamily:"Roc Grotesk, Wide Medium",
+  fontFamily: "roc-grotesk, sans-serif",
   textAlign:"left",
   lineHeight:"73px",
   textShadow: "0px 3px 18px #262B3B",
@@ -18,7 +19,8 @@ const h1 = {
 const p = {
   color:"white",
 }
-export const Header:React.FC =() => {
+
+export const Header:React.FC = () => {
   return (
         <Main>
           <Container>
@@ -40,6 +42,7 @@ export const Header:React.FC =() => {
         </Container>
           <h1 style={h1}>Wellness apartmány <br></br><span>v podhůří Jeseníků</span></h1>
           <Section>
+            
             <div>
             <img src={union}></img>
             <p style={p}>asdsdsd</p>

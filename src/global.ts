@@ -6,4 +6,7 @@ export default createGlobalStyle`
         outline:0;
         box-sizing:border-box
     }
+    #root{
+        margin:0 auto;
+    }
 `;
