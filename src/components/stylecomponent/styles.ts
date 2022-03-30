@@ -1,6 +1,6 @@
 import styled from  'styled-components';
-import image from '../images/mp02.png';
-import logo from '../images/logo.svg';
+import image from '../../images/mp02.png';
+import section from '../../images/section4.png';
 export const Main = styled.div`
     width:100%;
     height:584px;
@@ -34,13 +34,13 @@ export const MenuItem = styled.div`
     fontFamily: "roc-grotesk, sans-serif",
     color:white;
 `
-export const Button = styled.div`
-    width:176px;
+export const Button:any = styled.div`
+    border:2px solid white;
+    width:200px;
     height:61px;
-    background-color:#BF5757;
     color:white;
     padding-top:20px;
-    fontFamily: "roc-grotesk, sans-serif",
+    fontFamily: "roc-grotesk, sans-serif";
     text-align:center;
     font-size:12px;
 `
@@ -70,16 +70,19 @@ export const device = {
     desktopL: `(min-width: ${size.desktop})`
 };
 export const Paragraph: any = styled.p`
-    marginLeft:"40px",
-    textAlign:"center",
-    fontSize:"18px",
-    lineHeight:"30px",
+    fontFamily: "roc-grotesk, sans-serif";
+    text-align:"center";
+    font-size:"18px";
+    line-height:"30px";
+    font-weight:90px;
+    color: ${(props:Paragraph)=>props.color ? props.color  : "#262B3B"};
     @media (max-width: 768px) {
-        font-size:18
+        font-size:18px
       }
 `
-export const Title:any = styled.p`
-font-size:2.5rem;
+export const Title:any = styled.h1`
+font-size:${(props:Props)=>props.fontSize ? props.fontSize : "40px"};
+text-align:center;
 opacity:1;
 font-weight:bold;
 color: ${(props:Props)=>props.color ? props.color  : "#262B3B"};
@@ -91,9 +94,21 @@ fontFamily: "roc-grotesk, sans-serif",
      font-size:2rem
    }
 `
-interface Props {
-    fontSize: string
-    color: string
+export const Wrapper:any = styled.div`
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent url(${section})  0% 0% no-repeat padding-box ;
+    opacity: 1;
+`
+interface Paragraph {
+    fontSize: string,
+    color: string,
   }
-        
-
+  interface Props {
+    fontSize: string,
+    color: string,
+  }

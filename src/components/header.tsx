@@ -1,6 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Main,Button, Container,Logo,Menu,MenuItem,Section} from './styles';
+import React from 'react';
+import { Main, Container,Logo,Menu,MenuItem,Section} from './stylecomponent/styles';
 import logo from '../images/logo.svg';
 import union from '../images/Union.png';
 import union2 from '../images/union2.png';
@@ -25,7 +24,7 @@ export const Header:React.FC = () => {
         <Main>
           <Container>
           <Logo>
-            <img src={logo} />
+            {/* <img src={logo} /> */}
           </Logo>
             <Menu>
               <MenuItem>APARTMÁNY</MenuItem>
@@ -38,7 +37,7 @@ export const Header:React.FC = () => {
               <MenuItem>FOTOGALERIE</MenuItem>
               <MenuItem>KONTAKT</MenuItem>
             </Menu>
-            <Button>Hey</Button>
+            {/* <Button>Hey</Button> */}
         </Container>
           <h1 style={h1}>Wellness apartmány <br></br><span>v podhůří Jeseníků</span></h1>
           <Section>

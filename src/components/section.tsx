@@ -1,7 +1,6 @@
 import React from 'react';
 // import {H1} from '../components/headings';
-import styled from 'styled-components';
-import { Container,device,Paragraph,Title} from './styles';
+import {Paragraph,Title} from './stylecomponent/styles';
 
     const heading:any = {
         lineHeight:"30px",
@@ -11,8 +10,6 @@ import { Container,device,Paragraph,Title} from './styles';
         textAlign:"center",
         fontSize:"18px",
         lineHeight:"30px",
-        color:"#262B3B",
-        fontFamily: "roc-grotesk, sans-serif",
         fontStyle: "normal",
         padding:"50px",
   }
