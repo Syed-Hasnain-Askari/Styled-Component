@@ -3,7 +3,7 @@ import section from '../images/section4.png';
 import {Section2} from "../components/section2";
 import styled from "styled-components";
 import {Section} from "../components/section";
-import GloblaStyle from '../global'
+// import GloblaStyle from '../global'
 import { Footer } from '../components/footer';
 import "../components/footer.css";
 import { Banner } from "../components/banner";
@@ -24,7 +24,7 @@ const Wrapper:any = styled.div`
 const IndexPage:React.FC = () => {
   return (
     <main>
-      <GloblaStyle/>
+      {/* <GloblaStyle/> */}
       <Banner/>
       <Section />
       <Section2/>

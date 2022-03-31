@@ -37,10 +37,11 @@ export const Section = styled.div`
 interface Paragraph {
     fontSize: string,
     color: string,
+    align:String
   }
 export const Paragraph: any = styled.p`
     fontFamily: "roc-grotesk, sans-serif";
-    text-align:"center";
+    text-align: ${(props:Paragraph)=>props.align ? props.align  : "center"};
     font-size:"18px";
     line-height:"30px";
     font-weight:90px;
@@ -52,14 +53,16 @@ export const Paragraph: any = styled.p`
 interface Props {
     fontSize: string,
     color: string,
+    align:String
   }
 export const Title:any = styled.h1`
 font-size:${(props:Props)=>props.fontSize ? props.fontSize : "40px"};
-text-align:center;
+text-align:${(props:Props)=>props.align ? props.align : "center"};
 opacity:1;
+line-height:34px;
 font-weight:bold;
 color: ${(props:Props)=>props.color ? props.color  : "#262B3B"};
-fontFamily: "roc-grotesk, sans-serif",
+font-family: "roc-grotesk, sans-serif",
 @media (max-width: 768px) {
      font-size:2rem
    }
@@ -74,14 +77,14 @@ export const NewWrapper:any = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: transparent url(${section})  0% 0% no-repeat padding-box ;
+    background: transparent url(${`https://res.cloudinary.com/morireality/image/upload/v1648721110/HomePage/section4_mhkupv.png`})  0% 0% no-repeat padding-box ;
     opacity: 1;
 `
   export const Wrapper = styled.div`
   width:100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-image:url(${image});
+  background-image:url(${`https://res.cloudinary.com/morireality/image/upload/v1648721114/HomePage/mp02_sfhuut.png`});
   background-size: cover;
   object-fit: contain;
   @media (max-width: 700px) {
@@ -200,22 +203,30 @@ export const Menu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  font-Family: "Roc-Grotesk";
+  font-family: "roc-grotesk, sans-serif",
   color: #fff;
   @media (max-width: 1070px) {
       display: none;
   }
 `
+interface MenuItem {
+  fontSize: String,
+  color: String,
+  align:String
+}
 export const MenuItem = styled.li`
   text-transform: uppercase;
+  letter-spacing: 0px;
   margin: 0 13px;
-  font-size: .65rem;
+  font-size: ${(props:MenuItem)=>props.fontSize ? props.fontSize : "1rem"};
   font-weight: 600;
+  // color: ${(props:MenuItem)=>props.color ? props.fontSize : "#F0E8D9"};
+  color: #fff;
 `
 export const ButtonWrapper = styled.div`
   color: #fff;
 `
-export const Button = styled.button`
+export const Button = styled.div`
   color: #fff;
   background: #BF5757;
   padding: .55rem 2rem;
@@ -230,6 +241,15 @@ export const Button = styled.button`
   @media (max-width: 500px) {
       padding: .35rem 1rem;
   }
+`
+export const FooterButton = styled.div`
+  color: #fff;
+  background: #BF5757;
+  border: none;
+  outline: none;
+  width:176px;
+  height:61px;
+
 `
 export const ToggleButton = styled.div`
   color: #fff;

@@ -1,4 +1,14 @@
-/* .nav__scroll {
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+    font-family: "roc-grotesk, sans-serif"
+}
+#root{
+    margin:0 auto;
+}
+.nav__scroll {
     background-color: #F0E8D9;
     position: fixed;
     z-index: 1000;
@@ -9,4 +19,3 @@
 .nav__scroll .logo {
     filter: invert(1);
 }
-  */
