@@ -10,4 +10,16 @@ export default createGlobalStyle`
     #root{
         margin:0 auto;
     }
+    .nav__scroll {
+        background-color: #F0E8D9;
+        position: fixed;
+        z-index: 1000;
+    }
+    .nav__scroll .menu {
+        filter: invert(1);
+    }
+    .nav__scroll .logo {
+        filter: invert(1);
+    }
+     
 `;

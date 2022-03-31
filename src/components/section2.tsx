@@ -1,8 +1,8 @@
 import React from 'react'
-import {Wrapper,Button,Title,Paragraph} from './stylecomponent/styles'
+import {NewWrapper,NewButton,Title,Paragraph} from './stylecomponent/styles'
 export const Section2:React.FC = () => { 
   return (
-    <Wrapper>
+    <NewWrapper>
         <div className='container mt-5'>
           <div className="row d-flex justify-content-center mt-5">
               <Title color={"white"} fontSize={"3rem"}>
@@ -23,10 +23,10 @@ export const Section2:React.FC = () => {
               na vás, zda pěšky, na kole či na lyžích.
             </Paragraph>
             <div className='row d-flex justify-content-center'>
-              <Button>VÍCE O OKOLÍ</Button>
+              <NewButton>VÍCE O OKOLÍ</NewButton>
             </div>
           </div>
         </div>
-      </Wrapper>
+      </NewWrapper>
   )
 }

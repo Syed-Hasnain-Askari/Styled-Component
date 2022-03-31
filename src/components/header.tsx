@@ -1,64 +1,73 @@
-import React from 'react';
-import { Main, Container,Logo,Menu,MenuItem,Section} from './stylecomponent/styles';
-import logo from '../images/logo.svg';
-import union from '../images/Union.png';
-import union2 from '../images/union2.png';
-import union3 from '../images/union3.png';
-import Union4 from '../images/Union4.png'
-const h1:any = {
-  marginLeft:"50px",
-  fontFamily: "roc-grotesk, sans-serif",
-  textAlign:"left",
-  lineHeight:"73px",
-  textShadow: "0px 3px 18px #262B3B",
-  color:"white",
-  fontSize:"73px",
-  marginTop:"120px",
-}
-const p = {
-  color:"white",
-}
+import React, { useState,useEffect } from 'react'
+import { Navbar, Logo, LogoImage, Menu, MenuItem, ButtonWrapper, Button,ToggleButton, SideBar, SidebarMenu, CloseToggleButton, SidebarLogo, SidebarLogoIcon, SidebarLinks, SidebarUL,SidebarLink} from './stylecomponent/styles';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
-export const Header:React.FC = () => {
+import logo from '../images/logo.svg';
+import '../globalstyle.css'
+
+function Header() {
+  const [open, setOpen] = useState(false);
+  
+  const [show, handleShow] = useState(false);
+
+    const transitionNavbar = () => {
+        if (window.scrollY > 120) {
+            handleShow(true);
+        }
+        else {
+            handleShow(false);
+        }
+    };
+    useEffect(() => {
+        window.addEventListener("scroll", transitionNavbar);
+        return () => window.removeEventListener("scroll", transitionNavbar);
+    }, []);
   return (
-        <Main>
-          <Container>
+    <>
+      <Navbar className={`${show && 'nav__scroll'}`}>
           <Logo>
-            {/* <img src={logo} /> */}
+            <ToggleButton onClick={() => setOpen(!open)}>
+              <MenuIcon></MenuIcon>
+            </ToggleButton>
+            <LogoImage src={logo} className="logo"/>
           </Logo>
-            <Menu>
-              <MenuItem>APARTMÁNY</MenuItem>
-              <MenuItem>APARTMÁNY</MenuItem>
-              <MenuItem>OKOLÍ</MenuItem>
-              <MenuItem>BISTRO</MenuItem>
-              <MenuItem>BISTRO</MenuItem>
-              <MenuItem>DÁRKOVÉ POUKAZY</MenuItem>
-              <MenuItem>DÁRKOVÉ POUKAZY</MenuItem>
-              <MenuItem>FOTOGALERIE</MenuItem>
-              <MenuItem>KONTAKT</MenuItem>
-            </Menu>
-            {/* <Button>Hey</Button> */}
-        </Container>
-          <h1 style={h1}>Wellness apartmány <br></br><span>v podhůří Jeseníků</span></h1>
-          <Section>
-            
-            <div>
-            <img src={union}></img>
-            <p style={p}>asdsdsd</p>
-            </div>
-            <div>
-            <img src={union2}></img>
-            <p style={p}>asdsdsd</p>
-            </div>
-            <div>
-            <img src={union3} width="49px" height="65px"></img>
-            <p style={p}>asdsdsd</p>
-            </div>
-            <div>
-            <span><img src={Union4}></img></span>
-            <span style={p}><p>asdsdsd</p></span>
-            </div>
-          </Section>
-        </Main>
+          <Menu className="menu">
+            <MenuItem>appartment</MenuItem>
+            <MenuItem>wellness</MenuItem>
+            <MenuItem>okila</MenuItem>
+            <MenuItem>ahdy</MenuItem>
+            <MenuItem>reservaton</MenuItem>
+            <MenuItem>sffhsva</MenuItem>
+            <MenuItem>hetye</MenuItem>
+          </Menu>
+          <ButtonWrapper>
+            <Button>feasibility</Button>
+          </ButtonWrapper>
+        </Navbar>
+        <SideBar style={{ left: open ? "0" : "-100%"}}>
+          <SidebarMenu>
+            <CloseToggleButton>
+              <CloseIcon></CloseIcon>
+            </CloseToggleButton>
+            <SidebarLogo onClick={() => setOpen(false)}>
+              <SidebarLogoIcon src={logo} />
+            </SidebarLogo>
+            <SidebarLinks>
+              <SidebarUL>
+                <SidebarLink>appartment</SidebarLink>
+                <SidebarLink>appartment</SidebarLink>
+                <SidebarLink>appartment</SidebarLink>
+                <SidebarLink>appartment</SidebarLink>
+                <SidebarLink>appartment</SidebarLink>
+                <SidebarLink>appartment</SidebarLink>
+                <SidebarLink>appartment</SidebarLink>
+              </SidebarUL>
+            </SidebarLinks>
+          </SidebarMenu>
+        </SideBar>
+    </>
   )
 }
+
+export default Header
