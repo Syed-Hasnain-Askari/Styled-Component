@@ -60,14 +60,14 @@ font-size:${(props:Props)=>props.fontSize ? props.fontSize : "40px"};
 text-align:${(props:Props)=>props.align ? props.align : "center"};
 opacity:1;
 line-height:34px;
-font-weight:bold;
+// font-weight:bold;
 color: ${(props:Props)=>props.color ? props.color  : "#262B3B"};
 font-family: "roc-grotesk, sans-serif",
 @media (max-width: 768px) {
-     font-size:2rem
+     font-size:14px
    }
    @media (max-width: 425px) {
-     font-size:2rem
+     font-size:14px
    }
 `
 export const NewWrapper:any = styled.div`
@@ -222,6 +222,9 @@ export const MenuItem = styled.li`
   font-weight: 600;
   // color: ${(props:MenuItem)=>props.color ? props.fontSize : "#F0E8D9"};
   color: #fff;
+  @media (max-width:786px) {
+    font-size:14px
+  }
 `
 export const ButtonWrapper = styled.div`
   color: #fff;

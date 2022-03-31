@@ -32,13 +32,13 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="row pt-5">
           <div className="col-md-4 col-sm-12 pt-3">
-            <Title color={"white"} align={"left"} fonrSize={"34px"}>
+            <Title color={"white"} align={"left"} fontSize={"34px"}>
               Rezervujte
             </Title>
-            <Title color={"white"} align={"left"} fonrSize={"34px"}>
+            <Title color={"white"} align={"left"} fontSize={"34px"}>
               si apartmán
             </Title>
-            <Title color={"white"} align={"left"} fonrSize={"34px"}>
+            <Title color={"white"} align={"left"} fontSize={"34px"}>
               v Jeseníkách
             </Title>
           </div>
@@ -65,39 +65,39 @@ export const Footer: React.FC = () => {
             </Title>
             <ul className="list-unstyled">
               <li className="text-center text-uppercase">
-                <MenuItem fontSize={"14px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   APARTMÁNY
-                </MenuItem>
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <MenuItem fontSize={"14px"} color={"#F0E8D9"}>
-                  WELLNESS{" "}
-                </MenuItem>{" "}
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                  WELLNESS
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <MenuItem fontSize={"14px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   OKOLÍ
-                </MenuItem>{" "}
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <MenuItem fontSize={"14px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   BISTRO
-                </MenuItem>{" "}
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <MenuItem fontSize={"14px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   DÁRKOVÉ POUKAZY
-                </MenuItem>{" "}
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <MenuItem fontSize={"14px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   VILA REPUBLIKA
-                </MenuItem>{" "}
+                </Title>
               </li>
             </ul>
           </div>
           <div className="col-md-3 col-lg-3  mt-5">
-            <Title color={"white"} fontSize={"18px"}>
+            <Title color={"white"} fontSize={"14px"}>
               KONTAKT
             </Title>
             <div className="d-flex justify-content-center">
@@ -111,7 +111,7 @@ export const Footer: React.FC = () => {
                   +420 123 456 789
                 </span>
                 <br></br>
-                <span className="text-light">info@vilarepublika.cz</span>
+                <a className="text-light">info@vilarepublika.cz</a>
               </div>
             </div>
           </div>
@@ -122,13 +122,13 @@ export const Footer: React.FC = () => {
             <div className="mt-4 m-lg-4">
               <div className="">
                 <div>
-                  <p className="text-light text-center text-capitalize lh-sm">
+                  <h6 className="text-light text-center text-capitalize lh-sm">
                     Osvobození 354,
-                  </p>
-                  <p className="text-light text-center lh-sm">
+                  </h6>
+                  <h6 className="text-light text-center lh-sm">
                     Velké Losiny, 788 15
-                  </p>
-                  <p className="text-light text-center lh-sm">Zobrazit na mapě</p>
+                  </h6>
+                  <h6 className="text-light text-center lh-sm">Zobrazit na mapě</h6>
                 </div>
               </div>
             </div>
@@ -142,8 +142,11 @@ export const Footer: React.FC = () => {
                 <MyIcon src={footerlogo}/>
               </div>
               <div className="p-2">
-                <Title color={"white"} fontSize={"14px"}>
-                SLEDUJTE NÁS
+                <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
+                  VILA REPUBLIKA
+                </Title>
+                <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
+                  NA FACEBOOKU
                 </Title>
               </div>
             </div>
@@ -152,9 +155,12 @@ export const Footer: React.FC = () => {
               <MyIcon src={footerlogo2}/>
               </div>
               <div className="p-2">
-              <Title color={"white"} fontSize={"14px"}>
-                SLEDUJTE NÁS
+              <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
+                  VILA REPUBLIKA
               </Title>
+              <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
+                  NA INSTAGRAMU
+                </Title>
               </div>
             </div>
           </div>

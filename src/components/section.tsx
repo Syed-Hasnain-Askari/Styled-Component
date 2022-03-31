@@ -1,7 +1,11 @@
-import React, { Children } from "react";
+import React from "react";
 // import {H1} from '../components/headings';
 import { Paragraph, Title } from "./stylecomponent/styles";
 
+const main = {
+  paddingBottom: "100px",
+  paddingTop: "100px",
+};
 const heading: any = {
   lineHeight: "30px",
   textAlign: "center",
@@ -16,7 +20,7 @@ const para: any = {
 
 export const Section: React.FC = () => {
   return (
-    <>
+    <main style={main}>
       <div className="container">
         <Title style={heading} className="mt-5">
           Intimní atmosféra
@@ -42,10 +46,10 @@ export const Section: React.FC = () => {
           </div>
         </div>
         <Title style={heading} className="mt-5">
-          Intimní atmosféra
+          Staletá lázeňská historie
         </Title>
         <Title style={heading} className="mt-3">
-          prvorepublikové vily
+          Velkých Losin
         </Title>
         <div className="row d-flex align-items-center flex-row flex-row-reverse gx-5 mt-5 pb-5">
           <div className="col-md-6 col-lg-6">
@@ -68,6 +72,6 @@ export const Section: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
