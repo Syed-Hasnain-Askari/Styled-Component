@@ -336,6 +336,7 @@ export const Heading = styled.h1`
     @media (max-width: 700px) {
         font-size: 2.5rem;
     }
+
     @media (max-width: 500px) {
         font-size: 2rem;
     }

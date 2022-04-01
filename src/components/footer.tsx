@@ -61,46 +61,46 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3 col-lg-3 mt-5">
-            <Heading color={"white"} fontSize={"14px"}>
+            <Title color={"white"} fontSize={"14px"}>
               VILA REPUBLIKA
-            </Heading>
+            </Title>
             <ul className="list-unstyled">
               <li className="text-center text-uppercase">
-                <Heading fontSize={"10px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   APARTMÁNY
-                </Heading>
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Heading fontSize={"10px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   WELLNESS
-                </Heading>
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Heading fontSize={"10px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   OKOLÍ
-                </Heading>
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Heading fontSize={"10px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   BISTRO
-                </Heading>
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Heading fontSize={"10px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   DÁRKOVÉ POUKAZY
-                </Heading>
+                </Title>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Heading fontSize={"10px"} color={"#F0E8D9"}>
+                <Title fontSize={"10px"} color={"#F0E8D9"}>
                   VILA REPUBLIKA
-                </Heading>
+                </Title>
               </li>
             </ul>
           </div>
           <div className="col-md-3 col-lg-3  mt-5">
-            <Heading color={"white"} fontSize={"14px"}>
+            <Title color={"white"} fontSize={"14px"}>
               KONTAKT
-            </Heading>
+            </Title>
             <div className="d-flex justify-content-center">
               <div>
                 <MyIcon src={personAvatar} />
@@ -116,27 +116,27 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <div className="col-md-3 col-lg-3  mt-5">
-            <Heading color={"white"} fontSize={"14px"}>
+            <Title color={"white"} fontSize={"14px"}>
               KDE NÁS NAJDETE?
-            </Heading>
+            </Title>
             <div className="mt-4 m-lg-4">
               <div className="">
                 <div>
-                  <Heading fontSize={"12px"} className="text-light text-center text-capitalize lh-sm">
+                  <Title fontSize={"12px"} className="text-light text-center text-capitalize lh-sm">
                     Osvobození 354,
-                  </Heading>
-                  <Heading fontSize={"12px"} className="text-light text-center lh-sm">
+                  </Title>
+                  <Title fontSize={"12px"} className="text-light text-center lh-sm">
                     Velké Losiny, 788 15
-                  </Heading>
-                  <Heading fontSize={"12px"} className="text-light text-center lh-sm">Zobrazit na mapě</Heading>
+                  </Title>
+                  <Title fontSize={"12px"} className="text-light text-center lh-sm">Zobrazit na mapě</Title>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-lg-3 mt-5">
-            <Heading color={"white"} fontSize={"14px"}>
+            <Title color={"white"} fontSize={"14px"}>
               SLEDUJTE NÁS
-            </Heading>
+            </Title>
             <div className="d-flex justify-content-center mt-4">
               <div>
                 <MyIcon src={footerlogo} />

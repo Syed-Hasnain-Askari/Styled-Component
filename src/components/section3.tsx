@@ -28,29 +28,29 @@ export const Section3 = () => {
     <main style={main}>
       <div className="container">
         <div className="row mt-5">
-          <Heading color={"black"} className="mt-5">Další vybavení</Heading>
+          <Title color={"black"} className="mt-5">Další vybavení</Title>
           <div className="col-md-3 col-sm-6">
             <div className="d-flex align-item-center justify-content-center mt-5">
               <MyIcon src={union1} className="mt-5" />
-              <Heading color={"black"} fontSize={"15px"} className="mt-5 pt-3">LYŽÁRNA</Heading>
+              <Title color={"black"} fontSize={"15px"} className="mt-5 pt-3">LYŽÁRNA</Title>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="d-flex align-item-center justify-content-center mt-5">
               <MyIcon src={union1} className="mt-5" />
-              <Heading color={"black"} fontSize={"15px"} className="mt-5 pt-3">SPOLEČENSKÁ</Heading>
+              <Title color={"black"} fontSize={"15px"} className="mt-5 pt-3">SPOLEČENSKÁ</Title>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="d-flex align-item-center justify-content-center mt-5">
               <MyIcon src={union1} className="mt-5" />
-              <Heading color={"black"} fontSize={"15px"} className="mt-5 pt-3 ">PARKOVACÍ MÍSTO</Heading>
+              <Title color={"black"} fontSize={"15px"} className="mt-5 pt-3 ">PARKOVACÍ MÍSTO</Title>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="d-flex align-item-center justify-content-center mt-5">
               <MyIcon src={union1} className="mt-5" />
-              <Heading color={"black"} fontSize={"15px"} className="mt-5 pt-3">CHYTRÁ DOMÁCNOST</Heading>
+              <Title color={"black"} fontSize={"15px"} className="mt-5 pt-3">CHYTRÁ DOMÁCNOST</Title>
             </div>
           </div>
         </div>
