@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -19,3 +20,11 @@
 .nav__scroll .logo {
     filter: invert(1);
 }
+.image_grd:hover .info_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info_wrap .MuiSvgIcon-root {
+    font-size: 4rem;
+} 

@@ -22,10 +22,10 @@ export const Banner: React.FC = () => {
         Wellness apartmány <br />v podhůří Jeseníků
       </BannerTitle>
       <BottomInfoRow>
-        <InfoTile tileImage={union} info="hello world" />
-        <InfoTile tileImage={union2} info="hello world" />
-        <InfoTile tileImage={union3} info="hello world" />
-        <InfoTile tileImage={union4} info="hello world" />
+        <InfoTile tileImage={union} info="PRIVÁTNÍ WELLNESS" />
+        <InfoTile tileImage={union2} info="7 APARTMÁNŮ" />
+        <InfoTile tileImage={union3} info="UBYTOVÁNÍ V HORÁCH" />
+        <InfoTile tileImage={union4} info="MODERNÍ TECHNOLOGIE" />
       </BottomInfoRow>
     </Wrapper>
   );

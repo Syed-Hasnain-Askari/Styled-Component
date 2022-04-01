@@ -4,18 +4,19 @@ import {
   NewButton,
   Title,
   Paragraph,
+  Heading
 } from "./stylecomponent/styles";
 export const Section2: React.FC = () => {
   return (
     <NewWrapper>
       <div className="container mt-5">
         <div className="row d-flex justify-content-center mt-5">
-          <Title color={"white"} fontSize={"3rem"}>
+          <Heading color={"white"}>
             Nostalgické kouzl
-          </Title>
-          <Title color={"white"} fontSize={"3rem"}>
+          </Heading>
+          <Heading color={"white"}>
             hrubého Jeseníku
-          </Title>
+          </Heading>
         </div>
 
         <div className="row d-flex justify-content-center">

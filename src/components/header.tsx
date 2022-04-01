@@ -16,6 +16,7 @@ import {
   SidebarLinks,
   SidebarUL,
   SidebarLink,
+  FooterButton
 } from "./stylecomponent/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -58,15 +59,16 @@ function Header() {
           <MenuItem>hetye</MenuItem>
         </Menu>
         <ButtonWrapper>
-          <Button>REZERVACE</Button>
+          {/* <Button>REZERVACE</Button> */}
+          <FooterButton className="text-center pt-3">REZERVACE</FooterButton>
         </ButtonWrapper>
       </Navbar>
       <SideBar style={{ left: open ? "0" : "-100%" }}>
         <SidebarMenu>
           <CloseToggleButton>
-            <CloseIcon></CloseIcon>
+          <CloseIcon onClick={() => setOpen(false)}></CloseIcon>
           </CloseToggleButton>
-          <SidebarLogo onClick={() => setOpen(false)}>
+          <SidebarLogo>
             <SidebarLogoIcon src={logo} />
           </SidebarLogo>
           <SidebarLinks>

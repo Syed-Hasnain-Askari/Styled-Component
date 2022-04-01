@@ -1,10 +1,11 @@
 import React from "react";
-import "./footer.css";
 import {
   FooterButton,
   Button,
   MenuItem,
   Title,
+  Text,
+  Heading,
   Paragraph,
 } from "../components/stylecomponent/styles";
 import personAvatar from "../images/footerimage.png";
@@ -13,10 +14,10 @@ import footerlogo2 from "../images/footerlogo2.svg";
 import footerlogo3 from "../images/Union 12.svg";
 import styled from 'styled-components'
 const main = {
-  
+
   background: "#262b3b",
-  paddingBottom:"70px",
-  
+  paddingBottom: "70px",
+
 }
 
 const MyIcon = styled.img`
@@ -24,7 +25,7 @@ const MyIcon = styled.img`
 `;
 
 MyIcon.defaultProps = {
-  src: [personAvatar,footerlogo,footerlogo2,footerlogo3],
+  src: [personAvatar, footerlogo, footerlogo2, footerlogo3],
 };
 export const Footer: React.FC = () => {
   return (
@@ -32,15 +33,15 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="row pt-5">
           <div className="col-md-4 col-sm-12 pt-3">
-            <Title color={"white"} align={"left"} fontSize={"34px"}>
+            <Heading color={"white"} textAlign={"left"} fontSize={"34px"} className="lh-1">
               Rezervujte
-            </Title>
-            <Title color={"white"} align={"left"} fontSize={"34px"}>
+            </Heading>
+            <Heading color={"white"} textAlign={"left"} fontSize={"34px"} className="lh-1">
               si apartmán
-            </Title>
-            <Title color={"white"} align={"left"} fontSize={"34px"}>
+            </Heading>
+            <Heading color={"white"} textAlign={"left"} fontSize={"34px"} className="lh-1">
               v Jeseníkách
-            </Title>
+            </Heading>
           </div>
           <div className="col-md-4 col-sm-12 pt-3">
             <Paragraph color={"white"} fontSize={"18px"} align={"left"}>
@@ -60,86 +61,85 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3 col-lg-3 mt-5">
-            <Title color={"white"} fontSize={"18px"}>
+            <Heading color={"white"} fontSize={"14px"}>
               VILA REPUBLIKA
-            </Title>
+            </Heading>
             <ul className="list-unstyled">
               <li className="text-center text-uppercase">
-                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                <Heading fontSize={"10px"} color={"#F0E8D9"}>
                   APARTMÁNY
-                </Title>
+                </Heading>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                <Heading fontSize={"10px"} color={"#F0E8D9"}>
                   WELLNESS
-                </Title>
+                </Heading>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                <Heading fontSize={"10px"} color={"#F0E8D9"}>
                   OKOLÍ
-                </Title>
+                </Heading>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                <Heading fontSize={"10px"} color={"#F0E8D9"}>
                   BISTRO
-                </Title>
+                </Heading>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                <Heading fontSize={"10px"} color={"#F0E8D9"}>
                   DÁRKOVÉ POUKAZY
-                </Title>
+                </Heading>
               </li>
               <li className="text-center text-uppercase mt-2">
-                <Title fontSize={"10px"} color={"#F0E8D9"}>
+                <Heading fontSize={"10px"} color={"#F0E8D9"}>
                   VILA REPUBLIKA
-                </Title>
+                </Heading>
               </li>
             </ul>
           </div>
           <div className="col-md-3 col-lg-3  mt-5">
-            <Title color={"white"} fontSize={"14px"}>
+            <Heading color={"white"} fontSize={"14px"}>
               KONTAKT
-            </Title>
+            </Heading>
             <div className="d-flex justify-content-center">
               <div>
-                  <MyIcon src={personAvatar}/>
+                <MyIcon src={personAvatar} />
               </div>
-              <div className="mt-4 p-2">
-                <span className="text-light text-capitalize">Petr Morong</span>
-                <br></br>
-                <span className="text-light text-capitalize mt-lg-2">
+              <div className="mt-4">
+                <Title color={"white"} fontSize={"14px"} className="text-light text-capitalize lh-1">Petr Morong
+                </Title>
+                <Title color={"white"} fontSize={"14px"} className="text-light text-capitalize lh-1">
                   +420 123 456 789
-                </span>
-                <br></br>
-                <a className="text-light">info@vilarepublika.cz</a>
+                </Title>
+                <Title color={"white"} fontSize={"14px"} className="text-light lh-1">info@vilarepublika.cz</Title>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-lg-3  mt-5">
-            <Title color={"white"} fontSize={"18px"}>
+            <Heading color={"white"} fontSize={"14px"}>
               KDE NÁS NAJDETE?
-            </Title>
+            </Heading>
             <div className="mt-4 m-lg-4">
               <div className="">
                 <div>
-                  <h6 className="text-light text-center text-capitalize lh-sm">
+                  <Heading fontSize={"12px"} className="text-light text-center text-capitalize lh-sm">
                     Osvobození 354,
-                  </h6>
-                  <h6 className="text-light text-center lh-sm">
+                  </Heading>
+                  <Heading fontSize={"12px"} className="text-light text-center lh-sm">
                     Velké Losiny, 788 15
-                  </h6>
-                  <h6 className="text-light text-center lh-sm">Zobrazit na mapě</h6>
+                  </Heading>
+                  <Heading fontSize={"12px"} className="text-light text-center lh-sm">Zobrazit na mapě</Heading>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-lg-3 mt-5">
-            <Title color={"white"} fontSize={"18px"}>
+            <Heading color={"white"} fontSize={"14px"}>
               SLEDUJTE NÁS
-            </Title>
+            </Heading>
             <div className="d-flex justify-content-center mt-4">
               <div>
-                <MyIcon src={footerlogo}/>
+                <MyIcon src={footerlogo} />
               </div>
               <div className="p-2">
                 <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
@@ -152,21 +152,21 @@ export const Footer: React.FC = () => {
             </div>
             <div className="d-flex justify-content-center mt-3">
               <div>
-              <MyIcon src={footerlogo2}/>
+                <MyIcon src={footerlogo2} />
               </div>
               <div className="p-2">
-              <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
+                <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
                   VILA REPUBLIKA
-              </Title>
-              <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
+                </Title>
+                <Title color={"white"} fontSize={"10px"} className="lh-1 mt-2">
                   NA INSTAGRAMU
                 </Title>
               </div>
             </div>
           </div>
           <div className="d-flex justify-content-center mt-5">
-                <MyIcon src={footerlogo3}/>
-            </div>
+            <MyIcon src={footerlogo3} />
+          </div>
         </div>
       </div>
     </main>

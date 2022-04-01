@@ -1,6 +1,6 @@
 import React from "react";
 // import {H1} from '../components/headings';
-import { Paragraph, Title } from "./stylecomponent/styles";
+import { Paragraph, Title, Heading } from "./stylecomponent/styles";
 
 const main = {
   paddingBottom: "100px",
@@ -22,9 +22,12 @@ export const Section: React.FC = () => {
   return (
     <main style={main}>
       <div className="container">
-        <Title style={heading} className="mt-5">
-          Intimní atmosféra
-        </Title>
+        <div className="row mt-5">
+          <Heading style={heading} className="mt-5">
+            Intimní atmosféra
+          </Heading>
+          <Heading style={heading}>prvorepublikové vily</Heading>
+        </div>
         <div className="row d-flex flex-row align-items-center gx-5 mt-5">
           <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
             <img
@@ -45,12 +48,14 @@ export const Section: React.FC = () => {
             </Paragraph>
           </div>
         </div>
-        <Title style={heading} className="mt-5">
-          Staletá lázeňská historie
-        </Title>
-        <Title style={heading} className="mt-3">
-          Velkých Losin
-        </Title>
+        <div className="row mt-5">
+          <Heading style={heading} className="mt-5">
+            Staletá lázeňská historie
+          </Heading>
+          <Heading style={heading} className="mt-3">
+            Velkých Losin
+          </Heading>
+        </div>
         <div className="row d-flex align-items-center flex-row flex-row-reverse gx-5 mt-5 pb-5">
           <div className="col-md-6 col-lg-6">
             <img

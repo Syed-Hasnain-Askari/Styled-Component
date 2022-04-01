@@ -1,36 +1,23 @@
-import * as React from "react"
-import section from '../images/section4.png';
-import {Section2} from "../components/section2";
-import styled from "styled-components";
-import {Section} from "../components/section";
-// import GloblaStyle from '../global'
-import { Footer } from '../components/footer';
-import "../components/footer.css";
+import * as React from "react";
+import { Section2 } from "../components/section2";
+import { Section } from "../components/section";
+import { Section3 } from "../components/section3";
+import { Footer } from "../components/footer";
 import { Banner } from "../components/banner";
+import InfoGrid from "../components/InfoGrid";
 
 
-// markup
-const Wrapper:any = styled.div`
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: transparent url(${section})  0% 0% no-repeat padding-box ;
-  opacity: 1;
- 
-`
-const IndexPage:React.FC = () => {
+const IndexPage: React.FC = () => {
   return (
     <main>
-      {/* <GloblaStyle/> */}
-      <Banner/>
+      <Banner />
+      <InfoGrid />
       <Section />
-      <Section2/>
-      <Footer></Footer>
+      <Section3 />
+      <Section2 />
+      <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
